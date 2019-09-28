@@ -1,10 +1,19 @@
-// Ternario
+// Switch statement
 
-let puntaje;
+const metodoPago='efectivo';
 
-if(puntaje){
-    console.log('Si hay puntaje');
+switch(metodoPago){
+    case 'efectivo':
+        console.log(`Pagaste con ${metodoPago}`);
+        break;
+    case 'cheque':
+        console.log(`Pagaste con ${metodoPago} espere un momento...`);
+        break;
+    default:
+        console.log('Aun no has pagado o método de pago no válido');
+        break;
 }
-else{
-    console.log('No hay puntaje');
+
+function hola(){
+    console.log('Hola amigos');
 }
