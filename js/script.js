@@ -1,16 +1,24 @@
-// New date es igual a MES, DIA Y AÑO
-const unDia=new Date('1-27-1993');
+let puntaje=1000;
+const logueado=true;
+const edad=17;
 
-let valor;
+if(puntaje){
+    console.log('Si hay puntaje y es de '+ puntaje);
+}
+else{
+    console.log('No hay puntaje');
+}
 
-valor=unDia.getDay();
+let dinero=300;
+let totalCarrito=500;
+let tarjeta=false;
 
-console.log(valor);
-
-//Calculamos el dia de nacimiento de un terminado años
-// 0=Domingo
-// 1=Lunes
-// 2=Martes
-// ...
-
-// En este caso da 3, lo cual significa que yo naci un miercoles
+if(dinero>totalCarrito){
+    console.log('Pago Correcto');
+}
+else if(tarjeta){
+    console.log('Pagaste con tarjeta');
+}
+else{
+    console.log('Fondos Insuficientes');
+}
