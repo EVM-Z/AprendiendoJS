@@ -1,26 +1,16 @@
-const diaHoy=new Date();
+// New date es igual a MES, DIA Y AÑO
+const unDia=new Date('1-27-1993');
 
-let valor=diaHoy;
+let valor;
 
-// Retorna el número del mes 0=Enero
-valor=diaHoy.getMonth();
-
-// Retorna el número del día 0=Domingo
-valor=diaHoy.getDay();
-
-// Retorna el número del dia del mes
-valor=diaHoy.getDate();
-
-// Minutos de la hora
-valor=diaHoy.getMinutes();
-
-// Horas del dia
-valor=diaHoy.getHours();
-
-// Timestamp
-valor=diaHoy.getTime();
-
-// Año actual
-valor=diaHoy.getFullYear();
+valor=unDia.getDay();
 
 console.log(valor);
+
+//Calculamos el dia de nacimiento de un terminado años
+// 0=Domingo
+// 1=Lunes
+// 2=Martes
+// ...
+
+// En este caso da 3, lo cual significa que yo naci un miercoles
