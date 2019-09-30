@@ -1,45 +1,19 @@
-// Destructuring
+// Object Literal Enhacement
 
-const cliente={
-    nombre: 'Alejandra',
-    tipo: 'Premium',
-    datos:{
-        ubicacion:{
-            ciudad: 'Mexico',
-            pais: 'Mexico'
-        },
-        cuenta:{
-            desde: '10-12-2012',
-            saldo: 4000
-        }
-    },
-    gustos:{
-        musica:['Trance', 'Rock']
-    }
+const banda='Metalica',
+    genero='Heavy Metal',
+    canciones=['Master', 'Master de Master', 'Jefe'];
+
+// Forma antigua de hacerlo
+const metallica={
+    banda:banda,
+    genero:genero,
+    canciones:canciones
 }
 
-console.log(cliente);
-console.log('=====');
+console.log(metallica);
 
-// Crear la variable
-// Forma antigua
-// const nombreCliente=cliente.nombre,
-//     tipoCliente=cliente.tipo,
-//     ubicacionCliente=cliente.datos.ubicacion;
+// Forma nueva de acceder a los valores
+const metallica={banda, genero, canciones}
 
-// console.log(ubicacionCliente);
-console.log('=====');
-
-
-
-// Forma Nueva
-// let {nombre, tipo}=cliente;
-// let {datos:{ubicacion:{ciudad}}}=cliente;
-// console.log(ciudad);
-
-// Extraemos un dato especifico del objeto
-// let {datos:{cuenta:{saldo}}}=cliente;
-// console.log(saldo);
-
-let {gustos:musica}=cliente;
-console.log(musica);
+console.log(metallica);
