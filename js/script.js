@@ -1,19 +1,20 @@
-// Switch statement
+const carrito=['producto1', 'producto2', 'producto3'];
 
-const metodoPago='efectivo';
-
-switch(metodoPago){
-    case 'efectivo':
-        console.log(`Pagaste con ${metodoPago}`);
-        break;
-    case 'cheque':
-        console.log(`Pagaste con ${metodoPago} espere un momento...`);
-        break;
-    default:
-        console.log('Aun no has pagado o método de pago no válido');
-        break;
+// For loop
+for(let i=0; i<10; i++){
+    console.log(i);
 }
 
-function hola(){
-    console.log('Hola amigos');
+
+// While loop
+let i=0;
+while(i<10){
+    console.log(i);
+    i++;
 }
+
+// Do-While
+do{
+    console.log(i);
+    i++;
+}while(i<10);
