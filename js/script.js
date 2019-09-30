@@ -1,20 +1,54 @@
-const carrito=['producto1', 'producto2', 'producto3'];
+// Arreglo
+const pendientes = ['Tarea', 'Comer', 'Proyecto', 'Estudiar Javascrit'];
 
-// For loop
-for(let i=0; i<10; i++){
-    console.log(i);
+// Arreglo con objetos
+const carrito=[
+    {id:1, producto: 'Libro'},
+    {id:1, producto: 'Camisa'},
+    {id:3, producto: 'Disco'}
+];
+
+// Objeto
+let automovil={
+    modelo: 'Camaro',
+    motor: 6.0,
+    anio: 1967,
+    marca: 'Chevrolet'
 }
 
+// Accedemos a los datos de forma individual
+Object.values(automovil).forEach(info => {
+    console.log(info);
+});
 
-// While loop
-let i=0;
-while(i<10){
-    console.log(i);
-    i++;
-}
+console.log('=====');
 
-// Do-While
-do{
-    console.log(i);
-    i++;
-}while(i<10);
+// Crea una copia de un arreglo
+Object.values(automovil).map(info =>{
+    console.log(info);
+});
+
+// Accede a los valores de un objeto
+Object.values(automovil).forEach(info => {
+    console.log(info);
+});
+
+console.log('=====');
+
+Object.values(automovil).map(info => {
+    console.log(info);
+});
+
+console.log('=====');
+
+// Trae todos los pendientes que tienes
+// for(let i=0; i<pendientes.length; i++){
+//     console.log(pendientes[i]);
+// }
+
+console.log('=====');
+
+// Una forma mas corta que la anterior
+// for(pendiente of pendientes){
+//     console.log(pendiente);
+// }
